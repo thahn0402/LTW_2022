@@ -5,7 +5,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>EShopper - Bootstrap Shop Template</title>
+    <title>Trang chủ</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -70,7 +70,7 @@
         <div class="col-lg-4 col-md-6 pb-1">
             <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
                 <p class="text-right">15 sản phẩm</p>
-                <a href="" class="cat-img position-relative overflow-hidden mb-3">
+                <a href="menclothes.jsp" class="cat-img position-relative overflow-hidden mb-3">
                     <img class="img-fluid" src="img/cat-1.jpg" alt="">
                 </a>
                 <h5 class="font-weight-semi-bold m-0">Quần áo nam</h5>
@@ -79,7 +79,7 @@
         <div class="col-lg-4 col-md-6 pb-1">
             <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
                 <p class="text-right">15 sản phẩm</p>
-                <a href="" class="cat-img position-relative overflow-hidden mb-3">
+                <a href="womenclothes.jsp" class="cat-img position-relative overflow-hidden mb-3">
                     <img class="img-fluid" src="img/cat-2.jpg" alt="">
                 </a>
                 <h5 class="font-weight-semi-bold m-0">Quần áo nữ</h5>
@@ -88,7 +88,7 @@
         <div class="col-lg-4 col-md-6 pb-1">
             <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
                 <p class="text-right">15 sản phẩm</p>
-                <a href="" class="cat-img position-relative overflow-hidden mb-3">
+                <a href="childrenwear.jsp" class="cat-img position-relative overflow-hidden mb-3">
                     <img class="img-fluid" src="img/cat-3.jpg" alt="">
                 </a>
                 <h5 class="font-weight-semi-bold m-0">Quần áo trẻ em</h5>
@@ -97,7 +97,7 @@
         <div class="col-lg-4 col-md-6 pb-1">
             <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
                 <p class="text-right">15 sản phẩm</p>
-                <a href="" class="cat-img position-relative overflow-hidden mb-3">
+                <a href="accessory.jsp" class="cat-img position-relative overflow-hidden mb-3">
                     <img class="img-fluid" src="img/cat-4.jpg" alt="">
                 </a>
                 <h5 class="font-weight-semi-bold m-0">Phụ kiện</h5>
@@ -106,7 +106,7 @@
         <div class="col-lg-4 col-md-6 pb-1">
             <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
                 <p class="text-right">15 sản phẩm</p>
-                <a href="" class="cat-img position-relative overflow-hidden mb-3">
+                <a href="handbag.jsp" class="cat-img position-relative overflow-hidden mb-3">
                     <img class="img-fluid" src="img/cat-5.jpg" alt="">
                 </a>
                 <h5 class="font-weight-semi-bold m-0">Túi</h5>
@@ -115,7 +115,7 @@
         <div class="col-lg-4 col-md-6 pb-1">
             <div class="cat-item d-flex flex-column border mb-4" style="padding: 30px;">
                 <p class="text-right">15 sản phẩm</p>
-                <a href="" class="cat-img position-relative overflow-hidden mb-3">
+                <a href="shoes.jsp" class="cat-img position-relative overflow-hidden mb-3">
                     <img class="img-fluid" src="img/cat-6.jpg" alt="">
                 </a>
                 <h5 class="font-weight-semi-bold m-0">Giày</h5>
@@ -135,7 +135,7 @@
                 <div class="position-relative" style="z-index: 1;">
                     <h5 class="text-uppercase text-primary mb-3">Giảm giá 20% tất cả đơn hàng</h5>
                     <h1 class="mb-4 font-weight-semi-bold">Bộ sưu tập mùa xuân</h1>
-                    <a href="" class="btn btn-outline-primary py-md-2 px-md-3">Mua sắm ngay</a>
+                    <a href="shop.jsp" class="btn btn-outline-primary py-md-2 px-md-3">Mua sắm ngay</a>
                 </div>
             </div>
         </div>
@@ -145,7 +145,7 @@
                 <div class="position-relative" style="z-index: 1;">
                     <h5 class="text-uppercase text-primary mb-3">Giảm giá 20% tất cả đơn hàng</h5>
                     <h1 class="mb-4 font-weight-semi-bold">Bộ sưa tập mùa đông</h1>
-                    <a href="" class="btn btn-outline-primary py-md-2 px-md-3">Mua sắm ngay</a>
+                    <a href="shop.jsp" class="btn btn-outline-primary py-md-2 px-md-3">Mua sắm ngay</a>
                 </div>
             </div>
         </div>

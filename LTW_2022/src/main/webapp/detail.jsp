@@ -5,7 +5,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>EShopper - Bootstrap Shop Template</title>
+    <title>Chi tiết sản phẩm</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -36,11 +36,11 @@
 <!-- Page Header Start -->
 <div class="container-fluid bg-secondary mb-5">
     <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 300px">
-        <h1 class="font-weight-semi-bold text-uppercase mb-3">Shop Detail</h1>
+        <h1 class="font-weight-semi-bold text-uppercase mb-3">Chi tiết sản phẩm</h1>
         <div class="d-inline-flex">
-            <p class="m-0"><a href="">Home</a></p>
+            <p class="m-0"><a href="index.jsp">Trang chủ</a></p>
             <p class="m-0 px-2">-</p>
-            <p class="m-0">Shop Detail</p>
+            <p class="m-0">Chi tiết sản phẩm</p>
         </div>
     </div>
 </div>
@@ -76,7 +76,7 @@
         </div>
 
         <div class="col-lg-7 pb-5">
-            <h3 class="font-weight-semi-bold">Colorful Stylish Shirt</h3>
+            <h3 class="font-weight-semi-bold">Product name</h3>
             <div class="d-flex mb-3">
                 <div class="text-primary mr-2">
                     <small class="fas fa-star"></small>
@@ -85,7 +85,7 @@
                     <small class="fas fa-star-half-alt"></small>
                     <small class="far fa-star"></small>
                 </div>
-                <small class="pt-1">(50 Reviews)</small>
+                <small class="pt-1">(50 đánh giá)</small>
             </div>
             <h3 class="font-weight-semi-bold mb-4">$150.00</h3>
             <p class="mb-4">Volup erat ipsum diam elitr rebum et dolor. Est nonumy elitr erat diam stet sit clita ea.
@@ -118,27 +118,27 @@
                 </form>
             </div>
             <div class="d-flex mb-4">
-                <p class="text-dark font-weight-medium mb-0 mr-3">Colors:</p>
+                <p class="text-dark font-weight-medium mb-0 mr-3">Màu sắc:</p>
                 <form>
                     <div class="custom-control custom-radio custom-control-inline">
                         <input type="radio" class="custom-control-input" id="color-1" name="color">
-                        <label class="custom-control-label" for="color-1">Black</label>
+                        <label class="custom-control-label" for="color-1">Đen</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
                         <input type="radio" class="custom-control-input" id="color-2" name="color">
-                        <label class="custom-control-label" for="color-2">White</label>
+                        <label class="custom-control-label" for="color-2">Trắng</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
                         <input type="radio" class="custom-control-input" id="color-3" name="color">
-                        <label class="custom-control-label" for="color-3">Red</label>
+                        <label class="custom-control-label" for="color-3">Đỏ</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
                         <input type="radio" class="custom-control-input" id="color-4" name="color">
-                        <label class="custom-control-label" for="color-4">Blue</label>
+                        <label class="custom-control-label" for="color-4">Xanh dương</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
                         <input type="radio" class="custom-control-input" id="color-5" name="color">
-                        <label class="custom-control-label" for="color-5">Green</label>
+                        <label class="custom-control-label" for="color-5">Xanh lục</label>
                     </div>
                 </form>
             </div>
@@ -156,10 +156,10 @@
                         </button>
                     </div>
                 </div>
-                <button class="btn btn-primary px-3"><i class="fa fa-shopping-cart mr-1"></i> Add To Cart</button>
+                <button class="btn btn-primary px-3"><i class="fa fa-shopping-cart mr-1"></i>Thêm vào giỏ hàng</button>
             </div>
             <div class="d-flex pt-2">
-                <p class="text-dark font-weight-medium mb-0 mr-2">Share on:</p>
+                <p class="text-dark font-weight-medium mb-0 mr-2">Chia sẻ:</p>
                 <div class="d-inline-flex">
                     <a class="text-dark px-2" href="">
                         <i class="fab fa-facebook-f"></i>
@@ -180,13 +180,13 @@
     <div class="row px-xl-5">
         <div class="col">
             <div class="nav nav-tabs justify-content-center border-secondary mb-4">
-                <a class="nav-item nav-link active" data-toggle="tab" href="#tab-pane-1">Description</a>
-                <a class="nav-item nav-link" data-toggle="tab" href="#tab-pane-2">Information</a>
-                <a class="nav-item nav-link" data-toggle="tab" href="#tab-pane-3">Reviews (0)</a>
+                <a class="nav-item nav-link active" data-toggle="tab" href="#tab-pane-1">Mô tả</a>
+                <a class="nav-item nav-link" data-toggle="tab" href="#tab-pane-2">Thông tin</a>
+                <a class="nav-item nav-link" data-toggle="tab" href="#tab-pane-3">Đánh giá</a>
             </div>
             <div class="tab-content">
                 <div class="tab-pane fade show active" id="tab-pane-1">
-                    <h4 class="mb-3">Product Description</h4>
+                    <h4 class="mb-3">Mô tả sản phẩm</h4>
                     <p>Eos no lorem eirmod diam diam, eos elitr et gubergren diam sea. Consetetur vero aliquyam invidunt
                         duo dolores et duo sit. Vero diam ea vero et dolore rebum, dolor rebum eirmod consetetur
                         invidunt sed sed et, lorem duo et eos elitr, sadipscing kasd ipsum rebum diam. Dolore diam stet
@@ -200,7 +200,7 @@
                         et diam takimata sed justo. Magna takimata justo et amet magna et.</p>
                 </div>
                 <div class="tab-pane fade" id="tab-pane-2">
-                    <h4 class="mb-3">Additional Information</h4>
+                    <h4 class="mb-3">Thông tin sản phẩm</h4>
                     <p>Eos no lorem eirmod diam diam, eos elitr et gubergren diam sea. Consetetur vero aliquyam invidunt
                         duo dolores et duo sit. Vero diam ea vero et dolore rebum, dolor rebum eirmod consetetur
                         invidunt sed sed et, lorem duo et eos elitr, sadipscing kasd ipsum rebum diam. Dolore diam stet
@@ -264,10 +264,10 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <h4 class="mb-4">Leave a review</h4>
-                            <small>Your email address will not be published. Required fields are marked *</small>
+                            <h4 class="mb-4">Đánh giá</h4>
+                            <small>Địa chỉ email của bạn sẽ được giữ kín. Các trường bắt buộc được đánh dấu *</small>
                             <div class="d-flex my-3">
-                                <p class="mb-0 mr-2">Your Rating * :</p>
+                                <p class="mb-0 mr-2">Đánh giá của bạn * :</p>
                                 <div class="text-primary">
                                     <i class="far fa-star"></i>
                                     <i class="far fa-star"></i>
@@ -278,19 +278,19 @@
                             </div>
                             <form>
                                 <div class="form-group">
-                                    <label for="message">Your Review *</label>
+                                    <label for="message">Cảm nhận của bạn *</label>
                                     <textarea id="message" cols="30" rows="5" class="form-control"></textarea>
                                 </div>
                                 <div class="form-group">
-                                    <label for="name">Your Name *</label>
+                                    <label for="name">Tên của bạn *</label>
                                     <input type="text" class="form-control" id="name">
                                 </div>
                                 <div class="form-group">
-                                    <label for="email">Your Email *</label>
+                                    <label for="email">Email của bạn *</label>
                                     <input type="email" class="form-control" id="email">
                                 </div>
                                 <div class="form-group mb-0">
-                                    <input type="submit" value="Leave Your Review" class="btn btn-primary px-3">
+                                    <input type="submit" value="Đánh giá" class="btn btn-primary px-3">
                                 </div>
                             </form>
                         </div>
@@ -306,7 +306,7 @@
 <!-- Products Start -->
 <div class="container-fluid py-5">
     <div class="text-center mb-4">
-        <h2 class="section-title px-5"><span class="px-2">You May Also Like</span></h2>
+        <h2 class="section-title px-5"><span class="px-2">Có thể bạn cũng thích</span></h2>
     </div>
     <div class="row px-xl-5">
         <div class="col">

@@ -5,7 +5,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Cửa hàng</title>
+    <title>Quần áo nữ</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -36,11 +36,11 @@
 <!-- Page Header Start -->
 <div class="container-fluid bg-secondary mb-5">
     <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 300px">
-        <h1 class="font-weight-semi-bold text-uppercase mb-3">Cửa hàng</h1>
+        <h1 class="font-weight-semi-bold text-uppercase mb-3">Quần áo nữ</h1>
         <div class="d-inline-flex">
             <p class="m-0"><a href="index.jsp">Trang chủ</a></p>
             <p class="m-0 px-2">-</p>
-            <p class="m-0">Cửa hàng</p>
+            <p class="m-0">Quần áo nữ</p>
         </div>
     </div>
 </div>
@@ -54,7 +54,7 @@
         <div class="col-lg-3 col-md-12">
             <!-- Price Start -->
             <div class="border-bottom mb-4 pb-4">
-                <h5 class="font-weight-semi-bold mb-4"Mức giá</h5>
+                <h5 class="font-weight-semi-bold mb-4">Mức giá</h5>
                 <form>
                     <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
                         <input type="checkbox" class="custom-control-input" checked id="price-all">

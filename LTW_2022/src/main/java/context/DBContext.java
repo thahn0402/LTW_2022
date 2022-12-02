@@ -11,7 +11,7 @@ public class DBContext {
     public Connection getConnection() {
         Connection conn = null;
         try {
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             conn = DriverManager.getConnection(DB_URL, USER_NAME, PASSWORD);
             System.out.println("connect successfully!");
         } catch (Exception ex) {
@@ -21,10 +21,4 @@ public class DBContext {
         return conn;
     }
 
-    public static void main(String[] args) {
-        try {
-            System.out.println(new DBContext().getConnection());
-        } catch (Exception e) {
-        }
-    }
 }

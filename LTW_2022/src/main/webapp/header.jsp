@@ -76,25 +76,22 @@
             </a>
             <nav class="collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0 bg-light"
                  id="navbar-vertical" style="width: calc(100% - 30px); z-index: 1;">
-                <div class="navbar-nav w-100 overflow-hidden" style="height: 410px">
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link" data-toggle="dropdown">Quần áo<i
-                                class="fa fa-angle-down float-right mt-1"></i></a>
-                        <div class="dropdown-menu position-absolute bg-secondary border-0 rounded-0 w-100 m-0">
-                            <a href="" class="dropdown-item">Quần áo nam</a>
-                            <a href="" class="dropdown-item">Quần áo nữ</a>
-                            <a href="" class="dropdown-item">Quần áo trẻ em</a>
-                        </div>
-                    </div>
-                    <a href="" class="nav-item nav-link">Áo sơ mi</a>
-                    <a href="" class="nav-item nav-link">Quần jean</a>
-                    <a href="" class="nav-item nav-link">Đồ bơi</a>
-                    <a href="" class="nav-item nav-link">Đồ ngủ</a>
-                    <a href="" class="nav-item nav-link">Đồ thể thao</a>
-                    <a href="" class="nav-item nav-link">Jumpsuits</a>
-                    <a href="" class="nav-item nav-link">Blazers</a>
-                    <a href="" class="nav-item nav-link">Jackets</a>
-                    <a href="" class="nav-item nav-link">Giày</a>
+                <div class="navbar-nav w-100 overflow-hidden" style="height: 250px">
+<%--                    <div class="nav-item dropdown">--%>
+<%--                        <a href="#" class="nav-link" data-toggle="dropdown">Quần áo<i--%>
+<%--                                class="fa fa-angle-down float-right mt-1"></i></a>--%>
+<%--                        <div class="dropdown-menu position-absolute bg-secondary border-0 rounded-0 w-100 m-0">--%>
+<%--                            <a href="" class="dropdown-item">Quần áo nam</a>--%>
+<%--                            <a href="" class="dropdown-item">Quần áo nữ</a>--%>
+<%--                            <a href="" class="dropdown-item">Quần áo trẻ em</a>--%>
+<%--                        </div>--%>
+<%--                    </div>--%>
+                    <a href="menclothes.jsp" class="nav-item nav-link">Quần áo nam</a>
+                    <a href="womenclothes.jsp" class="nav-item nav-link">Quần áo nữ</a>
+                    <a href="childrenwear.jsp" class="nav-item nav-link">Quần áo trẻ em</a>
+                    <a href="accessory.jsp" class="nav-item nav-link">Phụ kiện</a>
+                    <a href="handbag.jsp" class="nav-item nav-link">Túi</a>
+                    <a href="shoes.jsp" class="nav-item nav-link">Giày</a>
                 </div>
             </nav>
         </div>

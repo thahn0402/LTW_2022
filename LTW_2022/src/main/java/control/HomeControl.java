@@ -9,12 +9,12 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet(name = "HomeControl", value = "/HomeControl")
+@WebServlet(name = "HomeControl", value = "/home")
 public class HomeControl extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         DAO dao = new DAO();
-        List<Product> list = dao.getAllProduct();
+        List<Product> list = dao.getAllProduct(2);
 
         request.setAttribute("listP", list);
         request.getRequestDispatcher("index.jsp").forward(request,response);

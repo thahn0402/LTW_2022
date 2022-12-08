@@ -1,3 +1,6 @@
+<%@ page import="entity.Cart" %>
+<%@ page import="entity.Item" %>
+<%@ page import="java.util.List" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
@@ -94,32 +97,33 @@
                 </div>
                 <div class="card-body">
                     <h5 class="font-weight-medium mb-3">Sản phẩm</h5>
+                    <%
+                        Cart cart = (Cart) session.getAttribute("cartP");
+                        List<Item> list = cart.getItems();
+                        for (Item p : list) {
+                    %>
                     <div class="d-flex justify-content-between">
-                        <p>Colorful Stylish Shirt 1</p>
-                        <p>$150</p>
+                        <p><%=p.getProduct().getName()%></p>
+                        <p>SL: <%=p.getQuantity()%></p>
+                        <p><%=p.getPrice()%> đ</p>
                     </div>
-                    <div class="d-flex justify-content-between">
-                        <p>Colorful Stylish Shirt 2</p>
-                        <p>$150</p>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <p>Colorful Stylish Shirt 3</p>
-                        <p>$150</p>
-                    </div>
+                    <%
+                        }
+                    %>
                     <hr class="mt-0">
                     <div class="d-flex justify-content-between mb-3 pt-1">
                         <h6 class="font-weight-medium">Tổng tiền</h6>
-                        <h6 class="font-weight-medium">$150</h6>
+                        <h6 class="font-weight-medium"><%=cart.totalMoney()%> đ</h6>
                     </div>
                     <div class="d-flex justify-content-between">
                         <h6 class="font-weight-medium">Phí giao hàng</h6>
-                        <h6 class="font-weight-medium">$10</h6>
+                        <h6 class="font-weight-medium">20 000 đ</h6>
                     </div>
                 </div>
                 <div class="card-footer border-secondary bg-transparent">
                     <div class="d-flex justify-content-between mt-2">
                         <h5 class="font-weight-bold">Tổng cộng</h5>
-                        <h5 class="font-weight-bold">$160</h5>
+                        <h5 class="font-weight-bold"><%=cart.totalMoney() + 20000%> đ</h5>
                     </div>
                 </div>
             </div>

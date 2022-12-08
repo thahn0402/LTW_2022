@@ -109,7 +109,7 @@
                     <div class="navbar-nav mr-auto py-0">
                         <a href="home" class="nav-item nav-link">Trang chủ</a>
                         <a href="shop" class="nav-item nav-link">Cửa hàng</a>
-                        <a href="cart.jsp" class="nav-item nav-link">Giỏ hàng</a>
+                        <a href="cart" class="nav-item nav-link">Giỏ hàng</a>
                         <a href="checkout.jsp" class="nav-item nav-link">Thanh toán</a>
                         <%--                        <a href="detail.jsp" class="nav-item nav-link">Shop Detail</a>--%>
                         <%--                        <div class="nav-item dropdown">--%>

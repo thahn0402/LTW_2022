@@ -1,6 +1,6 @@
 package entity;
 
-public class Product {
+public class Product implements Comparable<Product>{
     private int id;
     private String name;
     private String image;
@@ -78,5 +78,10 @@ public class Product {
                 ", title='" + title + '\'' +
                 ", description='" + description + '\'' +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Product p) {
+        return Math.round(this.id) - Math.round(p.id);
     }
 }

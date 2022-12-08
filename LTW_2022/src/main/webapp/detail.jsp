@@ -1,4 +1,4 @@
-<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -58,12 +58,12 @@
                     </div>
 
                 </div>
-<%--                <a class="carousel-control-prev" href="#product-carousel" data-slide="prev">--%>
-<%--                    <i class="fa fa-2x fa-angle-left text-dark"></i>--%>
-<%--                </a>--%>
-<%--                <a class="carousel-control-next" href="#product-carousel" data-slide="next">--%>
-<%--                    <i class="fa fa-2x fa-angle-right text-dark"></i>--%>
-<%--                </a>--%>
+                <%--                <a class="carousel-control-prev" href="#product-carousel" data-slide="prev">--%>
+                <%--                    <i class="fa fa-2x fa-angle-left text-dark"></i>--%>
+                <%--                </a>--%>
+                <%--                <a class="carousel-control-next" href="#product-carousel" data-slide="next">--%>
+                <%--                    <i class="fa fa-2x fa-angle-right text-dark"></i>--%>
+                <%--                </a>--%>
             </div>
         </div>
 
@@ -145,7 +145,10 @@
                         </button>
                     </div>
                 </div>
-                <button class="btn btn-primary px-3"><i class="fa fa-shopping-cart mr-1"></i>Thêm vào giỏ hàng</button>
+                <a href="addtocart?id=${o.id}&quantity=1" class="btn btn-sm text-dark p-0">
+                    <button class="btn btn-primary px-3"><i class="fa fa-shopping-cart mr-1"></i>Thêm vào giỏ hàng
+                    </button>
+                </a>
             </div>
             <div class="d-flex pt-2">
                 <p class="text-dark font-weight-medium mb-0 mr-2">Chia sẻ:</p>
@@ -181,40 +184,40 @@
                 <div class="tab-pane fade" id="tab-pane-2">
                     <h4 class="mb-3">Thông tin sản phẩm</h4>
                     <p>${detail.description}</p>
-<%--                    <div class="row">--%>
-<%--                        <div class="col-md-6">--%>
-<%--                            <ul class="list-group list-group-flush">--%>
-<%--                                <li class="list-group-item px-0">--%>
-<%--                                    Sit erat duo lorem duo ea consetetur, et eirmod takimata.--%>
-<%--                                </li>--%>
-<%--                                <li class="list-group-item px-0">--%>
-<%--                                    Amet kasd gubergren sit sanctus et lorem eos sadipscing at.--%>
-<%--                                </li>--%>
-<%--                                <li class="list-group-item px-0">--%>
-<%--                                    Duo amet accusam eirmod nonumy stet et et stet eirmod.--%>
-<%--                                </li>--%>
-<%--                                <li class="list-group-item px-0">--%>
-<%--                                    Takimata ea clita labore amet ipsum erat justo voluptua. Nonumy.--%>
-<%--                                </li>--%>
-<%--                            </ul>--%>
-<%--                        </div>--%>
-<%--                        <div class="col-md-6">--%>
-<%--                            <ul class="list-group list-group-flush">--%>
-<%--                                <li class="list-group-item px-0">--%>
-<%--                                    Sit erat duo lorem duo ea consetetur, et eirmod takimata.--%>
-<%--                                </li>--%>
-<%--                                <li class="list-group-item px-0">--%>
-<%--                                    Amet kasd gubergren sit sanctus et lorem eos sadipscing at.--%>
-<%--                                </li>--%>
-<%--                                <li class="list-group-item px-0">--%>
-<%--                                    Duo amet accusam eirmod nonumy stet et et stet eirmod.--%>
-<%--                                </li>--%>
-<%--                                <li class="list-group-item px-0">--%>
-<%--                                    Takimata ea clita labore amet ipsum erat justo voluptua. Nonumy.--%>
-<%--                                </li>--%>
-<%--                            </ul>--%>
-<%--                        </div>--%>
-<%--                    </div>--%>
+                    <%--                    <div class="row">--%>
+                    <%--                        <div class="col-md-6">--%>
+                    <%--                            <ul class="list-group list-group-flush">--%>
+                    <%--                                <li class="list-group-item px-0">--%>
+                    <%--                                    Sit erat duo lorem duo ea consetetur, et eirmod takimata.--%>
+                    <%--                                </li>--%>
+                    <%--                                <li class="list-group-item px-0">--%>
+                    <%--                                    Amet kasd gubergren sit sanctus et lorem eos sadipscing at.--%>
+                    <%--                                </li>--%>
+                    <%--                                <li class="list-group-item px-0">--%>
+                    <%--                                    Duo amet accusam eirmod nonumy stet et et stet eirmod.--%>
+                    <%--                                </li>--%>
+                    <%--                                <li class="list-group-item px-0">--%>
+                    <%--                                    Takimata ea clita labore amet ipsum erat justo voluptua. Nonumy.--%>
+                    <%--                                </li>--%>
+                    <%--                            </ul>--%>
+                    <%--                        </div>--%>
+                    <%--                        <div class="col-md-6">--%>
+                    <%--                            <ul class="list-group list-group-flush">--%>
+                    <%--                                <li class="list-group-item px-0">--%>
+                    <%--                                    Sit erat duo lorem duo ea consetetur, et eirmod takimata.--%>
+                    <%--                                </li>--%>
+                    <%--                                <li class="list-group-item px-0">--%>
+                    <%--                                    Amet kasd gubergren sit sanctus et lorem eos sadipscing at.--%>
+                    <%--                                </li>--%>
+                    <%--                                <li class="list-group-item px-0">--%>
+                    <%--                                    Duo amet accusam eirmod nonumy stet et et stet eirmod.--%>
+                    <%--                                </li>--%>
+                    <%--                                <li class="list-group-item px-0">--%>
+                    <%--                                    Takimata ea clita labore amet ipsum erat justo voluptua. Nonumy.--%>
+                    <%--                                </li>--%>
+                    <%--                            </ul>--%>
+                    <%--                        </div>--%>
+                    <%--                    </div>--%>
                 </div>
                 <div class="tab-pane fade" id="tab-pane-3">
                     <div class="row">
@@ -284,50 +287,51 @@
         <div class="col">
             <div class="owl-carousel related-carousel">
                 <c:forEach items="${listP}" var="o">
-                <div class="card product-item border-0">
-                    <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                        <a href="detail?pid=${o.id}"><img class="img-fluid w-100" style="height: 350px" src="${o.image}" alt=""></a>                    </div>
-                    <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                        <a href="detail?pid=${o.id}" class="text-truncate mb-3">${o.name}</a>
-                        <div class="d-flex justify-content-center">
-                            <h6>${o.price} đ</h6>
+                    <div class="card product-item border-0">
+                        <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                            <a href="detail?pid=${o.id}"><img class="img-fluid w-100" style="height: 350px"
+                                                              src="${o.image}" alt=""></a></div>
+                        <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                            <a href="detail?pid=${o.id}" class="text-truncate mb-3">${o.name}</a>
+                            <div class="d-flex justify-content-center">
+                                <h6>${o.price} đ</h6>
+                            </div>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between bg-light border">
+                            <a href="detail?pid=${o.id}" class="btn btn-sm text-dark p-0"><i
+                                    class="fas fa-eye text-primary mr-1"></i>Xem chi
+                                tiết</a>
+                            <a href="addtocart?id=${o.id}&quantity=1" class="btn btn-sm text-dark p-0"><i
+                                    class="fas fa-shopping-cart text-primary mr-1"></i>Thêm vào giỏ hàng</a>
                         </div>
                     </div>
-                    <div class="card-footer d-flex justify-content-between bg-light border">
-                        <a href="detail?pid=${o.id}" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>Xem chi
-                            tiết</a>
-                        <a href="" class="btn btn-sm text-dark p-0"><i
-                                class="fas fa-shopping-cart text-primary mr-1"></i>Thêm vào giỏ hàng</a>
-                    </div>
-                </div>
                 </c:forEach>
+            </div>
         </div>
     </div>
-</div>
-<!-- Products End -->
+    <!-- Products End -->
 
 
-<!-- Footer -->
-<jsp:include page="footer.jsp"></jsp:include>
+    <!-- Footer -->
+    <jsp:include page="footer.jsp"></jsp:include>
 
 
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
-<!-- Back to Top -->
-<a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-<!-- JavaScript Libraries -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-<script src="lib/easing/easing.min.js"></script>
-<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
 
-<!-- Contact Javascript File -->
-<script src="mail/jqBootstrapValidation.min.js"></script>
-<script src="mail/contact.js"></script>
-
-<!-- Template Javascript -->
-<script src="js/main.js"></script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>

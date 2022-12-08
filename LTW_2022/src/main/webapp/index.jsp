@@ -177,7 +177,7 @@
                     <div class="card-footer d-flex justify-content-between bg-light border">
                         <a href="detail?pid=${o.id}" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>Xem chi
                             tiết</a>
-                        <a href="" class="btn btn-sm text-dark p-0"><i
+                        <a href="addtocart?id=${o.id}&quantity=1" class="btn btn-sm text-dark p-0"><i
                                 class="fas fa-shopping-cart text-primary mr-1"></i>Thêm vào giỏ hàng</a>
                     </div>
                 </div>
@@ -209,7 +209,7 @@
                     <div class="card-footer d-flex justify-content-between bg-light border">
                         <a href="detail?pid=${o.id}" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>Xem chi
                             tiết</a>
-                        <a href="" class="btn btn-sm text-dark p-0"><i
+                        <a href="addtocart?id=${o.id}&quantity=1" class="btn btn-sm text-dark p-0"><i
                                 class="fas fa-shopping-cart text-primary mr-1"></i>Thêm vào giỏ hàng</a>
                     </div>
                 </div>

@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Chỉnh sửa sản phẩm</title>
+    <title>Chỉnh sửa tài khoản</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -38,7 +38,7 @@
         <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
             <div class="d-flex align-items-center border mb-4" style="padding: 30px;">
                 <%--                <h1 class="fa fa-check text-primary m-0 mr-3"></h1>--%>
-                <h5 class="font-weight-semi-bold m-0">Chỉnh sửa sản phẩm</h5>
+                <h5 class="font-weight-semi-bold m-0">Chỉnh sửa tài khoản</h5>
             </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
@@ -56,40 +56,40 @@
     </div>
 </div>
 <div id="form-add" class="" style="margin: 0 200px 0 200px">
-    <form action="edit" method="post">
+    <form action="editaccount" method="post">
         <div class="col-md-12 form-group">
             <label>ID</label>
             <input name="id" class="form-control" type="text" placeholder="" value="${detail.id}" readonly>
         </div>
         <div class="col-md-12 form-group">
-            <label>Tên sản phẩm</label>
+            <label>Tên</label>
             <input name="name" class="form-control" type="text" placeholder="" value="${detail.name}">
         </div>
         <div class="col-md-12 form-group">
-            <label>Hình ảnh</label>
-            <input name="image" class="form-control" type="text" placeholder="" value="${detail.image}">
+            <label>Địa chỉ</label>
+            <input name="address" class="form-control" type="text" placeholder="" value="${detail.address}">
         </div>
         <div class="col-md-12 form-group">
-            <label>Giá</label>
-            <input name="price" class="form-control" type="text" placeholder="" value="${detail.price}">
+            <label>Email</label>
+            <input name="email" class="form-control" type="text" placeholder="" value="${detail.email}">
         </div>
         <div class="col-md-12 form-group">
-            <label>Loại sản phẩm</label>
-            <input name="title" class="form-control" type="text" placeholder="" value="${detail.title}">
-            <p style="font-weight: bold">*Chú ý:<br>
-                 nu: quần áo nữ <br>
-                nam: quần áo nam<br>
-                te: quần áo trẻ em<br>
-                g: giày<br>
-                pk: phụ kiện<br>
-                tui: túi xách<br></p>
+            <label>Người bán</label>
+            <input name="isSell" class="form-control" type="text" placeholder="" value="${detail.isSell}">
+            <p style="font-weight: bold">*Chú ý:</p>
+            <p> (0) Không có chức năng
+                (1) Có chức năng</p>
         </div>
         <div class="col-md-12 form-group">
-            <label>Mô tả sản phẩm</label>
-            <input name="description" class="form-control" type="text" placeholder="" value="${detail.description}">
+            <label>Admin</label>
+            <input name="isAdmin" class="form-control" type="text" placeholder="" value="${detail.isAdmin}">
+            <p style="font-weight: bold">*Chú ý:</p>
+            <p> (0) Không có chức năng
+                (1) Có chức năng</p>
         </div>
-        <input class="col-md-3 btn btn-primary btn-block border-0 py-3" style="float: right" type="submit" value="Sửa"><br>
-        <a href="managerproduct" id="back"><i class="fas fa-angle-left"></i> Trở về</a>
+        <input class="col-md-3 btn btn-primary btn-block border-0 py-3" style="float: right" type="submit"
+               value="Sửa"><br>
+        <a href="manageraccount" id="back"><i class="fas fa-angle-left"></i> Trở về</a>
     </form>
 </div>
 </div>

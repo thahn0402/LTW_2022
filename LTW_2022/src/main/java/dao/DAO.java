@@ -78,13 +78,14 @@ public class DAO {
         return list;
     }
 
-    public List<Product> getProductBySellID(int id) {
+    public List<Product> getProductBySellID(int id, int index) {
         List<Product> list = new ArrayList<>();
-        String query = "SELECT * FROM product WHERE sellId =  ?";
+        String query = "SELECT * FROM product WHERE sellId =  ? LIMIT ?, 9";
         try {
             conn = new DBContext().getConnection();
             ps = conn.prepareStatement(query);
             ps.setInt(1, id);
+            ps.setInt(2, (index - 1) * 9);
             rs = ps.executeQuery();
             while (rs.next()) {
                 list.add(new Product(rs.getInt(1),
@@ -373,6 +374,20 @@ public class DAO {
         return 0;
     }
 
+    public int getTotalProductBySellId(int id) {
+        String query = "select count(*) from product where sellId = ?;";
+        try {
+            conn = new DBContext().getConnection();
+            ps = conn.prepareStatement(query);
+            ps.setInt(1, id);
+            rs = ps.executeQuery();
+            while (rs.next()) {
+                return rs.getInt(1);
+            }
+        } catch (Exception e) {
+        }
+        return 0;
+    }
     public Account login(String email, String password) {
         String query = "SELECT * FROM account WHERE email = ? AND password = ?";
         try {
@@ -429,14 +444,99 @@ public class DAO {
         } catch (Exception e) {
         }
     }
+    public List<Account> getAllAccount(int index) {
+        List<Account> list = new ArrayList<>();
+        String query = "SELECT * FROM account LIMIT ?,9;";
+        try {
+            conn = new DBContext().getConnection();
+            ps = conn.prepareStatement(query);
+            ps.setInt(1, (index - 1) * 9);
+            rs = ps.executeQuery();
+            while (rs.next()) {
+                list.add(new Account(rs.getInt(1),
+                        rs.getString(2),
+                        rs.getString(3),
+                        rs.getString(4),
+                        rs.getString(5),
+                        rs.getInt(6),
+                        rs.getInt(7)));
+            }
+        } catch (SQLException e) {
+        }
+        return list;
+    }
+    public int getTotalAccount() {
+        String query = "select count(*) from account";
+        try {
+            conn = new DBContext().getConnection();
+            ps = conn.prepareStatement(query);
+            rs = ps.executeQuery();
+            while (rs.next()) {
+                return rs.getInt(1);
+            }
+        } catch (Exception e) {
+        }
+        return 0;
+    }
+    public void deleteAccount(String pid) {
+        String query = "delete from account where uid = ?";
+        try {
+            conn = new DBContext().getConnection();
+            ps = conn.prepareStatement(query);
+            ps.setString(1, pid);
+            ps.executeUpdate();
+        } catch (SQLException e) {
+        }
+    }
+    public Account getAccountByID(String id) {
+        String query = "SELECT * FROM account WHERE uid = ?;";
+        try {
+            conn = new DBContext().getConnection();
+            ps = conn.prepareStatement(query);
+            ps.setString(1, id);
+            rs = ps.executeQuery();
+            while (rs.next()) {
+                return new Account(rs.getInt(1),
+                        rs.getString(2),
+                        rs.getString(3),
+                        rs.getString(4),
+                        rs.getString(5),
+                        rs.getInt(6),
+                        rs.getInt(7));
+            }
+        } catch (SQLException e) {
+        }
+        return null;
+    }
+    public void editAccount(String name, String address, String email, String isSell, String isAdmin, String pid) {
+        String query = "UPDATE account\n" +
+                "SET name = ?,\n" +
+                " address = ?, \n" +
+                " email = ?,\n" +
+                " isSell = ?, \n" +
+                " isAdmin = ?\n" +
+                "WHERE uid = ?";
+        try {
+            conn = new DBContext().getConnection();
+            ps = conn.prepareStatement(query);
+            ps.setString(1, name);
+            ps.setString(2, address);
+            ps.setString(3, email);
+            ps.setString(4, isSell);
+            ps.setString(5, isAdmin);
+            ps.setString(6, pid);
+            ps.executeUpdate();
+        } catch (SQLException e) {
+        }
+    }
 //    public static void main(String[] args) {
 //        DAO dao = new DAO();
-//        List<Product> list = dao.getProductBySellID(2);
-////        Account ac = dao.login("thanh@gmail.com", "thanh");
-////        System.out.println(ac);
-//        for (Product p : list) {
-//           System.out.println(p);
-//       }
+////        List<Account> list = dao.getAllAccount(1);
+//        Account ac = dao.getAccountByID("2");
+//        System.out.println(ac);
+////        for (Account p : list) {
+////           System.out.println(p);
+////       }
 //
 //    }
 }

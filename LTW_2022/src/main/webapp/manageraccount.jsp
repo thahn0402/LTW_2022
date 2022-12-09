@@ -19,142 +19,107 @@
 
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <link rel="stylesheet" href="css/style2.css">
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 
 <!-- Header -->
 <jsp:include page="header.jsp"></jsp:include>
 
-
-<div class="container">
-    <div class="row">
-        <div class="col-md-6">
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                    <span class="glyphicon glyphicon-list"></span>Sortable Lists
-                    <div class="pull-right action-buttons">
-                        <div class="btn-group pull-right">
-                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
-                                <span class="glyphicon glyphicon-cog" style="margin-right: 0px;"></span>
-                            </button>
-                            <ul class="dropdown-menu slidedown">
-                                <li><a href="http://www.jquery2dotnet.com"><span
-                                        class="glyphicon glyphicon-pencil"></span>Edit</a></li>
-                                <li><a href="http://www.jquery2dotnet.com"><span
-                                        class="glyphicon glyphicon-trash"></span>Delete</a></li>
-                                <li><a href="http://www.jquery2dotnet.com"><span
-                                        class="glyphicon glyphicon-flag"></span>Flag</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel-body">
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <div class="checkbox">
-                                <input type="checkbox" id="checkbox"/>
-                                <label for="checkbox">
-                                    List group item heading
-                                </label>
-                            </div>
-                            <div class="pull-right action-buttons">
-                                <a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-pencil"></span></a>
-                                <a href="http://www.jquery2dotnet.com" class="trash"><span
-                                        class="glyphicon glyphicon-trash"></span></a>
-                                <a href="http://www.jquery2dotnet.com" class="flag"><span
-                                        class="glyphicon glyphicon-flag"></span></a>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="checkbox">
-                                <input type="checkbox" id="checkbox2"/>
-                                <label for="checkbox2">
-                                    List group item heading 1
-                                </label>
-                            </div>
-                            <div class="pull-right action-buttons">
-                                <a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-pencil"></span></a>
-                                <a href="http://www.jquery2dotnet.com" class="trash"><span
-                                        class="glyphicon glyphicon-trash"></span></a>
-                                <a href="http://www.jquery2dotnet.com" class="flag"><span
-                                        class="glyphicon glyphicon-flag"></span></a>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="checkbox">
-                                <input type="checkbox" id="checkbox3"/>
-                                <label for="checkbox3">
-                                    List group item heading 2
-                                </label>
-                            </div>
-                            <div class="pull-right action-buttons">
-                                <a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-pencil"></span></a>
-                                <a href="http://www.jquery2dotnet.com" class="trash"><span
-                                        class="glyphicon glyphicon-trash"></span></a>
-                                <a href="http://www.jquery2dotnet.com" class="flag"><span
-                                        class="glyphicon glyphicon-flag"></span></a>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="checkbox">
-                                <input type="checkbox" id="checkbox4"/>
-                                <label for="checkbox4">
-                                    List group item heading 3
-                                </label>
-                            </div>
-                            <div class="pull-right action-buttons">
-                                <a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-pencil"></span></a>
-                                <a href="http://www.jquery2dotnet.com" class="trash"><span
-                                        class="glyphicon glyphicon-trash"></span></a>
-                                <a href="http://www.jquery2dotnet.com" class="flag"><span
-                                        class="glyphicon glyphicon-flag"></span></a>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="checkbox">
-                                <input type="checkbox" id="checkbox5"/>
-                                <label for="checkbox5">
-                                    List group item heading 4
-                                </label>
-                            </div>
-                            <div class="pull-right action-buttons">
-                                <a href="http://www.jquery2dotnet.com"><span class="glyphicon glyphicon-pencil"></span></a>
-                                <a href="http://www.jquery2dotnet.com" class="trash"><span
-                                        class="glyphicon glyphicon-trash"></span></a>
-                                <a href="http://www.jquery2dotnet.com" class="flag"><span
-                                        class="glyphicon glyphicon-flag"></span></a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="panel-footer">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h6>
-                                Total Count <span class="label label-info">25</span></h6>
-                        </div>
-                        <div class="col-md-6">
-                            <ul class="pagination pagination-sm pull-right">
-                                <li class="disabled"><a href="javascript:void(0)">«</a></li>
-                                <li class="active"><a href="javascript:void(0)">1 <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li><a href="http://www.jquery2dotnet.com">2</a></li>
-                                <li><a href="http://www.jquery2dotnet.com">3</a></li>
-                                <li><a href="http://www.jquery2dotnet.com">4</a></li>
-                                <li><a href="http://www.jquery2dotnet.com">5</a></li>
-                                <li><a href="javascript:void(0)">»</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+<div class="container-fluid pt-5">
+    <div class="row px-xl-5 pb-3">
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <div class="d-flex align-items-center border mb-4" style="padding: 30px;">
+                <%--                <h1 class="fa fa-check text-primary m-0 mr-3"></h1>--%>
+                <h5 class="font-weight-semi-bold m-0">Quản lí tài khoản</h5>
             </div>
         </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+            <%--            <div class="d-flex align-items-center border mb-4" style="padding: 30px;">--%>
+            <%--                <h1 class="fa fa-shipping-fast text-primary m-0 mr-2"></h1>--%>
+            <%--                <h5 class="font-weight-semi-bold m-0">Miễn phí Shipping</h5>--%>
+            <%--            </div>--%>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+
+        </div>
+        <%--        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">--%>
+        <%--            <div class="card-footer border-secondary bg-transparent">--%>
+
+        <%--                <a href="addProduct.jsp" class="btn btn-lg btn-block btn-primary font-weight-bold my-3 py-3"><i--%>
+        <%--                        class="text-primary mr-1"></i>Thêm sản phẩm</a>--%>
+        <%--            </div>--%>
+        <%--        </div>--%>
     </div>
+</div>
+<table class="table table-bordered ">
+    <thead>
+    <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Tên</th>
+        <th scope="col">Địa chỉ</th>
+        <th scope="col">Email</th>
+        <th scope="col">Người bán</th>
+        <th scope="col">Admin</th>
+        <th scope="col"></th>
+    </tr>
+    </thead>
+    <tbody>
+    <c:forEach items="${listP}" var="o">
+    <tr>
+        <td>${o.id}</td>
+        <td>${o.name}</td>
+        <td> ${o.address} </td>
+        <td>${o.email}</td>
+        <td>
+            <c:if test="${o.isSell == 1}">Là người bán</c:if>
+            <c:if test="${o.isSell == 0}">Không</c:if>
+        </td>
+        <td>
+            <c:if test="${o.isAdmin == 1}">Là Admin</c:if>
+            <c:if test="${o.isAdmin == 0}">Không</c:if>
+        </td>
+        <td>
+            <a href="loadaccount?pid=${o.id}" class=""><i class="fas fa-edit"></i></a>
+            <a href="deleteaccount?pid=${o.id}" class=""><i class="fas fa-trash"></i></a>
+        </td>
+    </tr>
+    </c:forEach>
+
+</table>
+<div class="col-12 pb-1">
+    <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-center mb-3">
+            <c:if test="${tag>1}">
+                <li class="page-item">
+                    <a class="page-link" href="manageraccount?index=${tag - 1}" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                </li>
+            </c:if>
+            <c:forEach begin="1" end="${endP}" var="i">
+                <li class="${tag == i?"page-item active":"page-item"}"><a class="page-link"
+                                                                          href="manageraccount?index=${i}">${i}</a>
+                </li>
+            </c:forEach>
+            <c:if test="${tag<endP}">
+                <li class="page-item">
+                    <a class="page-link" href="manageraccount?index=${tag + 1}" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </li>
+            </c:if>
+        </ul>
+    </nav>
 </div>
 <!-- Footer -->
 <jsp:include page="footer.jsp"></jsp:include>

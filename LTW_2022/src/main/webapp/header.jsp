@@ -124,7 +124,7 @@
                             <a href="managerproduct" class="nav-item nav-link">QL sản phẩm</a>
                         </c:if>
                         <c:if test="${sessionScope.acc.isAdmin == 1}">
-                            <a href="" class="nav-item nav-link">QL tài khoản</a>
+                            <a href="manageraccount" class="nav-item nav-link">QL tài khoản</a>
                         </c:if>
                     </div>
                     <c:if test="${sessionScope.acc != null}">

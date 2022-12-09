@@ -85,7 +85,33 @@
     </tr>
     </c:forEach>
 </table>
-
+<div class="col-12 pb-1">
+    <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-center mb-3">
+            <c:if test="${tag>1}">
+                <li class="page-item">
+                    <a class="page-link" href="managerproduct?index=${tag - 1}" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                </li>
+            </c:if>
+            <c:forEach begin="1" end="${endP}" var="i">
+                <li class="${tag == i?"page-item active":"page-item"}"><a class="page-link"
+                                                                          href="managerproduct?index=${i}">${i}</a>
+                </li>
+            </c:forEach>
+            <c:if test="${tag<endP}">
+                <li class="page-item">
+                    <a class="page-link" href="managerproduct?index=${tag + 1}" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </li>
+            </c:if>
+        </ul>
+    </nav>
+</div>
 <!-- Footer -->
 <jsp:include page="footer.jsp"></jsp:include>
 </body>

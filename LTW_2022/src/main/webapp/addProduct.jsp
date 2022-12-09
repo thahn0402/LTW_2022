@@ -72,6 +72,13 @@
             <div class="col-md-12 form-group">
                 <label>Loại sản phẩm</label>
                 <input name="title" class="form-control" type="text" placeholder="">
+                <p style="font-weight: bold">*Chú ý: <br>
+                    nu: quần áo nữ <br>
+                    nam: quần áo nam<br>
+                    te: quần áo trẻ em<br>
+                    g: giày<br>
+                    pk: phụ kiện<br>
+                    tui: túi xách<br></p>
             </div>
             <div class="col-md-12 form-group">
                 <label>Mô tả sản phẩm</label>

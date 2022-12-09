@@ -10,8 +10,8 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet(name = "ManagerProductControl", value = "/managerproduct")
-public class ManagerProductControl extends HttpServlet {
+@WebServlet(name = "ManagerAccountControl", value = "/manageraccount")
+public class ManagerAccountControl extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String indexPage = request.getParameter("index");
@@ -23,17 +23,17 @@ public class ManagerProductControl extends HttpServlet {
         Account a = (Account) session.getAttribute("acc");
         int id = a.getId();
         DAO dao = new DAO();
-        int count = dao.getTotalProductBySellId(id);
+        int count = dao.getTotalAccount();
         int endPage = count / 9;
         if (count % 9 != 0) {
             endPage++;
         }
-        List<Product> list = dao.getProductBySellID(id,index);
+        List<Account> list = dao.getAllAccount(index);
 
         request.setAttribute("endP", endPage);
         request.setAttribute("listP", list);
         request.setAttribute("tag", index);
-        request.getRequestDispatcher("managerproduct.jsp").forward(request, response);
+        request.getRequestDispatcher("manageraccount.jsp").forward(request, response);
     }
 
     @Override

@@ -34,7 +34,7 @@
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
   /*--font-family-sans-serif: "Poppins", sans-serif;*/
-  --font-family-sans-serif: "Times New Roman", Times, sans-serif;
+  --font-family-sans-serif: "Times New Roman", sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -45,7 +45,7 @@
 }
 
 html {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Times New Roman", sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -57,7 +57,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Times New Roman", Times, sans-serif;
+  font-family: "Times New Roman", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -240,7 +240,7 @@ select,
 optgroup,
 textarea {
   margin: 0;
-  font-family: "Times New Roman", Times, sans-serif;
+  font-family: "Times New Roman", sans-serif;
   font-size: inherit;
   line-height: inherit;
 }
@@ -5570,7 +5570,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Times New Roman", Times, sans-serif;
+  font-family: "Times New Roman", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5682,7 +5682,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Times New Roman", Times, sans-serif;
+  font-family: "Times New Roman",  sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
